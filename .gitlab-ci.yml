@@ -1,0 +1,13 @@
+stages:
+  - build
+  - run
+  - test
+
+Build image:
+  stage: build
+
+Run image:
+  stage: run
+
+Run tests:
+  stage: test
