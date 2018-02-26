@@ -15,17 +15,17 @@ config :app,
 
 config :app, App.Repo,
   adapter: Ecto.Adapters.Postgres,
-  database: "dev_cwstatsbot",
-  username: "macbookpro",
-  password: "",
-  hostname: "localhost",
+  database: "cwstats",
+  username: "cwstats",
+  password: "secret",
+  hostname: "postgres",
   port: "5432"
 
 # Exq
 
 config :exq,
   name: Exq,
-  host: "127.0.0.1",
+  host: "redis",
   port: 6379,
   namespace: "exq",
   concurrency: 40,

@@ -6,7 +6,7 @@ defmodule App.Commands.Admin do
   @admin 36983349
 
   alias App.Repo
-  alias App.Models.{User, QuestLoot, Quest}
+  alias App.Models.{User, QuestLoot}
   alias App.Commands.Start
 
   import Ecto.Query
